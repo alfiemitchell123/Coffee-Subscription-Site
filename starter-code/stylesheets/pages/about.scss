@@ -1,0 +1,101 @@
+// about.scss
+
+main {
+    #about-hero h1 {
+        font-size: 1.75rem;
+    }
+
+    #about-hero p {
+        opacity: 0.8;
+        font-size: 0.9375rem;
+    }
+
+    #commitment {
+        #commitment-img {
+            padding: 12rem 0;
+            margin: 7.5rem 1.5rem 3rem;
+        }
+
+        #commitment-info {
+            @include center-flex-container;
+            flex-direction: column;
+            text-align: center;
+            color: $dark-grey;
+            margin-bottom: 7.5rem;
+
+            h1 {
+                font-size: 2rem;
+                line-height: 3rem;
+                margin-bottom: 1.88rem;
+            }
+
+            p {
+                opacity: 0.8;
+                padding: 0 1.5rem;
+            }
+        }
+    }
+
+    #quality {
+        background-color: $footer-color;
+        text-align: center;
+        margin: 0 1.5rem 7.5rem;
+        position: relative;
+        @include center-flex-container;
+
+        #quality-img {
+            position: absolute;
+            width: 80%;
+            transform: translateY(-9rem);
+        }
+
+        #quality-info {
+            @include center-flex-container;
+            flex-direction: column;
+            padding: 0 1.5rem;
+
+            p {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    #headquarters {
+        @include center-flex-container;
+        flex-direction: column;
+        margin-bottom: 2.5rem;
+
+        h2 {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: $light-grey;
+            margin-bottom: 4.5rem;
+        }
+
+        .hq--card {
+            @include center-flex-container;
+            flex-direction: column;
+            text-align: center;
+
+            .hq--img {
+                margin-bottom: 3rem;
+            }
+
+            h1 {
+                color: $dark-grey;
+                font-size: 1.75rem;
+                line-height: 2.25rem;
+                margin-bottom: 1.38rem;
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                color: $dark-grey;
+                font-family: $secondary-font;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+// Mobile and tablet navigation
+header {
+    margin: 2rem 1.5rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    #header-logo {
+        width: 65%;
+    }
+
+    #toggle-btn {
+        cursor: pointer;
+
+        #icon-open,
+        #icon-close {
+            display: none;
+        }
+
+        &.closed #icon-open {
+            display: inline;
+        }
+
+        &.opened #icon-close {
+            display: inline;
+        }
+
+        &.opened #icon-open {
+            display: none;
+        }
+    }
+}
+
+#overlay-nav {
+    display: none;
+    background: $off-white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 9999;
+
+    ul {
+        list-style-type: none;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 5rem 0;
+        padding: 0;
+
+        a {
+            text-decoration: none;
+            color: $dark-grey;
+        }
+
+        li {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+// Desktop navigation

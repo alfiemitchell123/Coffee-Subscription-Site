@@ -1,0 +1,61 @@
+// _global.scss
+
+body {
+    @include color-theme;
+    font-family: $primary-font;
+}
+
+p {
+    font-family: $secondary-font;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    margin: 0;
+}
+
+main {
+    .hero {
+        @include center-flex-container;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.125rem;
+        background-size: cover;
+        margin: 0 1.5rem;
+        padding: 6.25rem 1.5rem;
+    }
+
+    footer {
+        @include center-flex-container;
+        flex-direction: column;
+        text-align: center;
+        background-color: $footer-color;
+        padding: 3.4rem;
+        margin: 0 1.5rem 4rem;
+
+        #footer-logo {
+            width: 14rem;
+            margin-bottom: 3rem;
+        }
+
+        ul {
+            padding: 0;
+            margin-bottom: 1.5rem;
+
+            li {
+                text-transform: uppercase;
+                color: $light-grey;
+                font-family: $secondary-font;
+                font-weight: 700;
+                font-size: 0.75rem;
+                line-height: 0.9375rem;
+                letter-spacing: 0.05769rem;
+                list-style: none;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .socials {
+            display: flex;
+            gap: 1.5rem;
+        }
+    }
+}
